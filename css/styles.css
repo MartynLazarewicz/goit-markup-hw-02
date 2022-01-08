@@ -41,10 +41,6 @@ footer {
   background-color: #2f303a;
 }
 
-address {
-  max-width: 1200px;
-}
-
 nav {
   display: flex;
 }
@@ -173,4 +169,8 @@ nav {
 .team_member img {
   width: 100%;
   height: auto;
+}
+
+.address {
+  max-width: 1200px;
 }
