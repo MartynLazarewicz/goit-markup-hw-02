@@ -302,7 +302,7 @@ address ul li:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio__filtr ul li .button {
+.button {
   color: var(--color-primary);
   font-size: 1rem;
   line-height: 26px;
@@ -316,8 +316,8 @@ address ul li:not(:last-child) {
   transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
 }
 
-.portfolio__filtr ul li .button:hover,
-.portfolio__filtr ul li .button:focus {
+.button:hover,
+.button:focus {
   color: var(--color-white);
   background-color: var(--color-secondary);
 }
