@@ -3,6 +3,8 @@
   --color-secondary: #2196f3;
   --color-thirdly: #757575;
 
+  --color-white: #ffffff;
+
   --font-roboto-light: 400;
   --font-roboto-normal: 500;
   --font-roboto-bold: 700;
@@ -29,11 +31,10 @@ body {
   color: var(--color-primary);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  line-height: 1.3;
 }
 
 .container {
-  width: 73.125em;
+  width: 73.125rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -56,7 +57,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5em;
+  height: 5rem;
 }
 
 .logo {
@@ -110,4 +111,46 @@ a {
 
 .contact-link:hover {
   color: var(--color-secondary);
+}
+
+/* Hero */
+
+.hero {
+  background: url(../images/hero_slider.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 37.5rem;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: var(--color-white);
+  font-size: 2.75rem;
+  font-weight: var(--font-roboto-xbold);
+  line-height: 3.75rem;
+  letter-spacing: 0.08em;
+  width: 43.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1.875rem;
+}
+
+.hero-btn {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  font-size: 1rem;
+  font-weight: var(--font-roboto-bold);
+  line-height: 1.875rem;
+  letter-spacing: 0.08em;
+  border: 0;
+  padding: 0.625rem 2.0625rem;
+  border-radius: 0.312rem;
+  cursor: pointer;
 }
