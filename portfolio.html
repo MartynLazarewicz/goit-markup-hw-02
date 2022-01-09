@@ -1,38 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <!-- Credentials -->
+    <meta name="description" content="Kurs: GOIT Polska, Full-Stack Developer, Zadanie domowe #2" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Martyn Lazarewicz" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Title -->
+    <title>Zadanie Domowe #2</title>
   </head>
   <body>
-    <header class="container">
-      <nav>
-        <a class="company-name" href="./index.html"
-          ><span class="company-name_accent">Web</span>Studio</a
-        >
-        <ul class="nav-bar">
-          <li class="nav-bar_item"><a class="hover" href="./index.html">Agencja</a></li>
-          <li class="nav-bar_item"><a class="hover" href="./portfolio.html">Portfolio</a></li>
-          <li class="nav-bar_item"><a class="hover" href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <a class="contact hover" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contact hover" href="tel:+48111111111">+48 111 111 111</a>
+    <header class="header">
+      <div class="container">
+        <a href="index.html"><span>Web</span>Studio</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Agencja</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a href="tel:+48111111111">+48 111 111 111</a>
+      </div>
     </header>
-    <main></main>
-    <footer>
-      <address class="container">
-        <a class="company-name light" href="/index.html"
-          ><span class="company-name_accent">Web</span>Studio</a
-        ><br /><br />
-        <span class="contact-footer light">m. Warszawa, Aleje Jerozolimskie 21</span><br />
-        <a class="contact-footer hover" href="mailto:info@devstudio.com">info@devstudio.com</a
-        ><br />
-        <a class="contact-footer hover" href="tel:+48111111111">+48 111 111 111</a>
+    <main>
+      <section class="portfolio">
+        <div class="portfolio__filtr">
+          <ul>
+            <li><a href="#" type="button">Wszystkie</a></li>
+            <li><a href="#" type="button">Strony</a></li>
+            <li><a href="#" type="button">Aplikacje</a></li>
+            <li><a href="#" type="button">Dizajn</a></li>
+            <li><a href="#" type="button">Marketing</a></li>
+          </ul>
+        </div>
+        <div class="portfolio__content">
+          <ul>
+            <li>
+              <img src="images/technocrack.jpg" alt="technocrack" width="370" height="294" />
+              <h4>Technocrack</h4>
+              <p>Strona Internetowa</p>
+            </li>
+            <li>
+              <img src="images/golden_star.jpg" alt="golden_star" width="370" height="294" />
+              <h4>Grafika New Orlean vs Golden Star</h2>
+              <p>Dizajn</p>
+            </li>
+            <li>
+              <img src="images/seafood.jpg" alt="seafood" width="370" height="294" />
+              <h4>Restauracja Seafood</h4>
+              <p>Aplikacja</p>
+            </li>
+            <li>
+              <img src="images/projekt_prime.jpg" alt="projekt_prime" width="370" height="294" />
+              <h4>Projekt Prime</h4>
+              <p>Marketing</p>
+            </li>
+            <li>
+              <img src="images/projekt_boxes.jpg" alt="projekt_boxes" width="370" height="294" />
+              <h4>Projekt Boxes</h4>
+              <p>Aplikacja</p>
+            </li>
+            <li>
+              <img src="images/inspiration_monitor.jpg" alt="inspiration_monitor" width="370" height="294" />
+              <h4>Inspiration has no Borders</h4>
+              <p>Strona Internetowa</p>
+            </li>
+            <li>
+              <img src="images/limited_edition.jpg" alt="limited_edition_book" width="370" height="294" />
+              <h4>Magazyn Limited Edition</h4>
+              <p>Dizajn</p>
+            </li>
+            <li>
+              <img src="images/lab_tag.jpg" alt="lab_tag" width="370" height="294" />
+              <h4>Projekt LAB</h4>
+              <p>Marketing</p>
+            </li>
+            <li>
+              <img src="images/business_laptop.jpg" alt="business_laptop" width="370" height="294" />
+              <h4>Growing Business</h4>
+              <p>Aplikacja</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="index.html"><span>Web</span>Studio</a>
+      <address>
+        <ul>
+          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
       </address>
     </footer>
   </body>
