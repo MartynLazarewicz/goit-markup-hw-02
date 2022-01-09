@@ -302,20 +302,22 @@ address ul li:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio__filtr ul li a {
+.portfolio__filtr ul li .button {
   color: var(--color-primary);
   font-size: 1rem;
   line-height: 26px;
   font-weight: var(--font-roboto-normal);
   letter-spacing: 0.03em;
   background-color: var(--color-bg-light);
+  border: 0;
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
   transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
 }
 
-.portfolio__filtr ul li a:hover,
-.portfolio__filtr ul li a:focus {
+.portfolio__filtr ul li button:hover,
+.portfolio__filtr ul li button:focus {
   color: var(--color-white);
   background-color: var(--color-secondary);
 }
