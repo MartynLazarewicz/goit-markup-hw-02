@@ -180,14 +180,14 @@ h2 {
   gap: 1.875rem;
 }
 
-.about-content li h4 {
+.about-content-item h4 {
   font-size: 0.875rem;
   line-height: 1.025625rem;
   font-weight: var(--font-roboto-bold);
   margin-bottom: 0.8125rem;
 }
 
-.about-content li p {
+.about-content-item p {
   color: var(--color-thirdly);
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -215,7 +215,7 @@ h2 {
   gap: 30px;
 }
 
-.team-content h5 {
+.team-content-item h5 {
   font-size: 1rem;
   line-height: 18.75px;
   font-weight: var(--font-roboto-normal);
@@ -223,7 +223,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.team-content p {
+.team-content-item p {
   color: var(--color-thirdly);
   font-size: 1rem;
   line-height: 18.75px;
@@ -287,18 +287,16 @@ address ul li:not(:last-child) {
 
 /* Portfolio filtr */
 
-.portfolio__filtr {
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.portfolio__filtr ul {
+.portfolio-filtr-content {
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
-.portfolio__filtr ul li:not(:last-child) {
+.portfolio-filtr-content-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -317,25 +315,36 @@ address ul li:not(:last-child) {
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button:active {
   color: var(--color-white);
   background-color: var(--color-secondary);
 }
 
 /* Portfolio content */
 
-.portfolio__content ul {
+.portfolio-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.portfolio__content-item {
+.portfolio-content-item {
   background: #ffffff;
   border: 1px solid #eeeeee;
+  transition: box-shadow 150ms ease-in-out, background 150ms ease-in-out;
 }
 
-.portfolio__content h4 {
+.portfolio-content-item:hover,
+.portfolio-content-item:focus {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.portfolio-content-item-link h4 {
+  color: var(--color-primary);
   font-size: 1rem;
   line-height: 18.75px;
   font-weight: var(--font-roboto-normal);
@@ -344,7 +353,7 @@ address ul li:not(:last-child) {
   margin-left: 24px;
 }
 
-.portfolio__content p {
+.portfolio-content-item-link p {
   color: var(--color-thirdly);
   font-size: 1rem;
   line-height: 18.75px;
