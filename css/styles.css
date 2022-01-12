@@ -245,25 +245,32 @@ h2 {
 
 .team-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
 .team-content-item h5 {
+  color: var(--color-primary);
   font-size: 1rem;
   line-height: 18.75px;
   font-weight: var(--font-roboto-normal);
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-content-item p {
   color: var(--color-secondary);
   font-size: 1rem;
   line-height: 18.75px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .team-content-item {
+  max-width: 269px;
+  height: auto;
+  transition: box-shadow 150ms ease-in-out, background 150ms ease-in-out;
+  overflow: hidden;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -357,15 +364,20 @@ address ul li:not(:last-child) {
 /* Portfolio content */
 
 .portfolio-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .portfolio-content-item {
+  max-width: 370px;
+  height: auto;
   background: #ffffff;
   border: 1px solid #eeeeee;
   transition: box-shadow 150ms ease-in-out, background 150ms ease-in-out;
+  overflow: hidden;
 }
 
 .portfolio-content-item:hover,
@@ -395,4 +407,39 @@ address ul li:not(:last-child) {
   letter-spacing: var(--l-spacing-03);
   padding-bottom: 30px;
   padding-left: 24px;
+}
+
+.filtr {
+  font-size: 0;
+  text-align: center;
+}
+
+.filtr-item {
+  display: inline-block;
+  margin-bottom: var(--gap-50);
+}
+
+.filtr-item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.filtr-item--button {
+  color: var(--color-primary);
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: var(--font-roboto-normal);
+  letter-spacing: 0.03em;
+  background-color: var(--color-bg-light);
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+}
+
+.filtr-item--button:hover,
+.filtr-item--button:focus,
+.filtr-item--button:active {
+  color: var(--color-white);
+  background-color: var(--color-accent);
 }
