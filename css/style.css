@@ -247,7 +247,6 @@ h2 {
 
 .what-we-do {
   text-align: center;
-  font-style: 0;
 }
 
 .what-we-do-content {
@@ -266,7 +265,6 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: var(--gap-30);
-  font-style: 0;
 }
 
 .team-content-item h5 {
@@ -395,7 +393,6 @@ address {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--gap-30);
-  font-style: 0;
 }
 
 .portfolio-content-item {
