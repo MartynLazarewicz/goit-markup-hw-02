@@ -188,7 +188,6 @@ h2 {
   height: 37.5rem;
   display: flex;
   align-items: center;
-  vertical-align: middle;
 }
 
 .hero-content {
@@ -253,12 +252,14 @@ h2 {
 .what-we-do-content {
   display: flex;
   gap: var(--gap-30);
+  font-style: 0;
 }
 
 /* Team */
 
 .team {
   text-align: center;
+  font-style: 0;
 }
 
 .team-content {
@@ -394,6 +395,7 @@ address {
   align-items: center;
   flex-wrap: wrap;
   gap: var(--gap-30);
+  font-style: 0;
 }
 
 .portfolio-content-item {
