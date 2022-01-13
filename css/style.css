@@ -247,19 +247,18 @@ h2 {
 
 .what-we-do {
   text-align: center;
+  font-style: 0;
 }
 
 .what-we-do-content {
   display: flex;
   gap: var(--gap-30);
-  font-style: 0;
 }
 
 /* Team */
 
 .team {
   text-align: center;
-  font-style: 0;
 }
 
 .team-content {
@@ -267,6 +266,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: var(--gap-30);
+  font-style: 0;
 }
 
 .team-content-item h5 {
