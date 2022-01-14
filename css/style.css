@@ -433,3 +433,45 @@ address {
   padding-bottom: var(--gap-30);
   padding-left: var(--gap-24);
 }
+
+img {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+img[alt]::before {
+  color: var(--color-primary);
+  font-size: var(--font-18);
+  line-height: var(--l-height-36);
+  font-weight: var(--font-bold);
+  font-family: var(--font-primary);
+  letter-spacing: var(--l-spacing-06);
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  right: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+img[alt]::after {
+  content: '';
+  background: url(../images/not-found-icon-18.jpg) no-repeat;
+  background-size: contain;
+  height: 30px;
+  color: var(--color-primary);
+  font-size: var(--font-18);
+  line-height: var(--l-height-36);
+  font-weight: var(--font-bold);
+  font-family: var(--font-primary);
+  letter-spacing: var(--l-spacing-06);
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
