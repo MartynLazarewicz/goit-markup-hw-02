@@ -227,7 +227,7 @@ h2 {
   gap: var(--gap-30);
 }
 
-.about-content-item h4 {
+.about-content-item h3 {
   font-size: var(--font-14);
   line-height: var(--l-height-16);
   font-weight: var(--font-bold);
@@ -267,7 +267,7 @@ h2 {
   gap: var(--gap-30);
 }
 
-.team-content-item h5 {
+.team-content-item h4 {
   color: var(--color-primary);
   font-size: var(--font-16);
   line-height: var(--l-height-19);
@@ -412,7 +412,7 @@ address {
   border-radius: 0px 0px 4px 4px;
 }
 
-.portfolio-content-item-link h4 {
+.portfolio-content-item-link h3 {
   color: var(--color-primary);
   font-size: var(--font-18);
   line-height: var(--l-height-36);
